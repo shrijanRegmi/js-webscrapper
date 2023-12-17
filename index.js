@@ -22,7 +22,7 @@ const scrapeWebSites = async () => {
   finalData = finalData.filter((item) => item);
 
   fs.writeFile(
-    "./data/scrapped.js",
+    "./scrapped.js",
     getFinalData(variable, finalData),
     (err) => {
       if (err) throw err;
